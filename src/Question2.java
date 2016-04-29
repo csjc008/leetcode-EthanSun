@@ -26,7 +26,8 @@ public class Question2 {
         // the spacial complexity of the algorithm is
         // O(socialNetworkSize*courseListSize), hard to predict
         // assume the two external methods consumes constant time,
-        // the time complexity is O(log(socialNetworkSize*courseListSize))
+        // the time complexity is O(nlogn) where n is
+        // socialNetworkSize*courseListSize
 
         // set to store the user's social network of 2nd-level link
         Set<String> socialSet = new HashSet<String>();
