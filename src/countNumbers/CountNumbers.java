@@ -8,6 +8,9 @@ public class CountNumbers {
         }
     }
 
+    /**
+     * 判定序列是否符合要求
+     */
     private boolean compareCount(int[] src, int[] tgt) {
         for (int i = 0; i < src.length; i++) {
             if (tgt[i] != src[i]) {
@@ -28,9 +31,6 @@ public class CountNumbers {
         // 随机种子
         int[] count = { 2, 2, 2, 3, 3, 5, 5, 6, 6, 7 };
         int[] prevCount = new int[10];
-        // for (int i = 0; i < 10; i++) {
-        // count[i] = 1;
-        // }
 
         // 支持多位数
         while (true) {

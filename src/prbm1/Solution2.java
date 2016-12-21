@@ -20,8 +20,6 @@ public class Solution2 {
                 }
             }
         }
-        i++;
-        j++;
         if (i < j) {
             return new int[] { i, j };
         } else {
