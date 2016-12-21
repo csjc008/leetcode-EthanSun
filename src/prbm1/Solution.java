@@ -3,6 +3,20 @@ package prbm1;
 import java.util.Arrays;
 import java.util.Comparator;
 
+/**
+ * 1. <b>Two Sum</b><br>
+ * Given an array of integers, return indices of the two numbers such that they
+ * add up to a specific target.<br>
+ *
+ * You may assume that each input would have exactly one solution.<br>
+ *
+ * Example:<br>
+ * Given nums = [2, 7, 11, 15], target = 9,<br>
+ *
+ * Because nums[0] + nums[1] = 2 + 7 = 9,<br>
+ * return [0, 1].
+ *
+ */
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
 
@@ -14,7 +28,7 @@ public class Solution {
         Pair[] pnums = new Pair[nums.length];
         for (int i = 0; i < nums.length; i++) {
             pnums[i] = new Pair();
-            pnums[i].idx = i + 1;
+            pnums[i].idx = i;
             pnums[i].val = nums[i];
         }
 

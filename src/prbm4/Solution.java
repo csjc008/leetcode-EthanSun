@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 4. Median of Two Sorted Arrays <br>
+ * 4. <b>Median of Two Sorted Arrays</b> <br>
  * There are two sorted arrays nums1 and nums2 of size m and n respectively.
  *
  * Find the median of the two sorted arrays. The overall run time complexity
@@ -126,7 +126,7 @@ public class Solution {
                 midL = midR = curVal;
                 break;
             }
-            // if (!isOdd) {
+
             if (s == (b + 1)) {
                 midR = curVal;
 
@@ -134,7 +134,7 @@ public class Solution {
                 midL = curVal;
 
             }
-            // }
+
             if (midL != null && midR != null) {
                 break;
             }
@@ -156,7 +156,6 @@ public class Solution {
                 }
             }
         }
-        // System.out.println(midL + " " + midR);
         if (midL != null) {
             ret.add(midL);
         }
