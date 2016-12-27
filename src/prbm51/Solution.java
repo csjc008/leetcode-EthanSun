@@ -30,7 +30,7 @@ import java.util.List;
  */
 public class Solution {
     /**
-     * AC, Time Complexity(excluding the output procedure) is O(n^2)
+     * AC, Time Complexity(excluding the output procedure) is O(n!)
      */
     public List<List<String>> solveNQueens(int n) {
         // occupation tag for slant left, (i + j)

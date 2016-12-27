@@ -21,7 +21,7 @@ import java.util.List;
 public class Solution {
 
     /**
-     * AC Time Complexity: O(logm)*O(logn)
+     * AC Time Complexity: O(logm*logn)
      */
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int l1 = nums1.length;

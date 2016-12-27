@@ -1,5 +1,7 @@
 package prbm52;
 
+import java.util.Date;
+
 /**
  * 52. <b>N-Queens II</b><br>
  * Follow up for N-Queens problem.<br>
@@ -9,7 +11,7 @@ package prbm52;
  */
 public class Solution {
     /**
-     * AC, Time Complexity is O(n^2)
+     * AC, Time Complexity is O(n!)
      */
     public int totalNQueens(int n) {
         // occupation tag for slant left, (i + j)
@@ -60,6 +62,9 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        System.out.println(s.totalNQueens(4));
+        Date d1 = new Date();
+        s.totalNQueens(13);
+        Date d2 = new Date();
+        System.out.println(d2.getTime() - d1.getTime());
     }
 }
