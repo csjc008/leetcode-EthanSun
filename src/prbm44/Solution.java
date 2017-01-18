@@ -23,6 +23,9 @@ package prbm44;
  * isMatch("aab", "c*a*b") → false<br>
  */
 public class Solution {
+    /**
+     * AC, fast enough
+     */
     public boolean isMatch(String s, String p) {
         // replace all redundent ** to *
         if (p.length() > 0) {
